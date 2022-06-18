@@ -1,0 +1,11 @@
+name: NeuralAntiCheat
+version: 1.0
+main: dev.mrflyn.nac.NeuralAntiCheat
+api-version: 1.13
+load: POSTWORLD
+depend:
+  - ProtocolLib
+commands:
+  nac:
+    usage: /<command> []
+    description: main command
