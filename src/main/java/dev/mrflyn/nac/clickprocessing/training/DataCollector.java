@@ -47,7 +47,7 @@ public class DataCollector {
                 }
                 ClickData clickData = new ClickData(cpsCounter.getCachedCPS(), player);
                 data.add(clickData);
-                player.sendMessage("["+i+"] CP1/4S: "+clickData.getClicks()+" TPS: "+clickData.getTps()+" PING: "+clickData.getPing());
+                player.sendMessage("["+i+"] CP1/4S: "+clickData.getClicks()+" TPS: "+clickData.getTps()+" PING: "+clickData.getPingFluctuation());
                 i++;
             }
         };

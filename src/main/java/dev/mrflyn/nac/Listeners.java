@@ -1,10 +1,13 @@
 package dev.mrflyn.nac;
 
+import com.comphenix.protocol.ProtocolLibrary;
 import dev.mrflyn.nac.clickprocessing.CpsCounter;
+import dev.mrflyn.nac.protocol.PacketListener;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 
 public class Listeners implements Listener {
     NeuralAntiCheat instance;
@@ -26,6 +29,11 @@ public class Listeners implements Listener {
                 }
             });
         }
+    }
+
+    @EventHandler
+    public void onLeave(PlayerQuitEvent e){
+//        PacketListener.ignoreList.remove(e.getPlayer().getUniqueId());
     }
 
 }

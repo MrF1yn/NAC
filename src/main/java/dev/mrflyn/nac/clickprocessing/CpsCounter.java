@@ -9,6 +9,7 @@ import dev.mrflyn.nac.NeuralAntiCheat;
 import dev.mrflyn.nac.checks.IChecker;
 import dev.mrflyn.nac.clickprocessing.training.ClickData;
 import dev.mrflyn.nac.clickprocessing.training.TrainingData;
+import dev.mrflyn.nac.utils.SpigotReflection;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
@@ -85,7 +86,7 @@ public class CpsCounter {
         }
         ClickData cData = new ClickData(cachedCPS, player);
         this.clickData.add(cData);
-        player.sendMessage("["+clickData.size()+"] CP1/4S: "+cData.getClicks()+" TPS: "+cData.getTps()+" PING: "+cData.getPing());
+        player.sendMessage("["+clickData.size()+"] CP1/4S: "+cData.getClicks()+" TPS: "+cData.getTps()+" PING: "+cData.getPingFluctuation());
     }
 
     public void start(){

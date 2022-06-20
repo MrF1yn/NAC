@@ -23,7 +23,8 @@ public class NeuralAntiCheat extends JavaPlugin {
         saveDefaultConfig();
         initializeDependencies();
         getServer().getPluginManager().registerEvents(new Listeners(this), this);
-        ProtocolLibrary.getProtocolManager().getAsynchronousManager().registerAsyncHandler(new PacketListener(this, PacketType.Play.Client.ARM_ANIMATION)).start();
+        ProtocolLibrary.getProtocolManager().getAsynchronousManager().registerAsyncHandler(new PacketListener(this, PacketType.Play.Client.ARM_ANIMATION,
+                PacketType.Play.Client.USE_ENTITY)).start();
         cpsCounterTask = new CpsCounterTask();
         cpsCounterTask.start();
         dataFolder = this.getDataFolder();

@@ -7,12 +7,12 @@ public class ClickData {
 
     private final int clicks;
     private final double tps;
-    private final double ping;
+    private final double pingFluctuation;
 
     public ClickData(int clicks, Player player) {
         this.clicks = clicks;
         this.tps = SpigotReflection.get().recentTps()[0];
-        this.ping = SpigotReflection.get().ping(player);
+        this.pingFluctuation = SpigotReflection.get().ping(player);
     }
 
     public int getClicks() {
@@ -23,7 +23,7 @@ public class ClickData {
         return tps;
     }
 
-    public double getPing() {
-        return ping;
+    public double getPingFluctuation() {
+        return pingFluctuation;
     }
 }
