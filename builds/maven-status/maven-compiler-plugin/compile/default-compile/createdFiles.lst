@@ -1,5 +1,7 @@
 dev\mrflyn\nac\clickprocessing\CpsCounterTask$1.class
+dev\mrflyn\nac\checks\IChecker.class
 dev\mrflyn\nac\clickprocessing\training\TrainingData.class
+dev\mrflyn\nac\checks\KillAuraChecker.class
 dev\mrflyn\nac\clickprocessing\training\ClickData.class
 dev\mrflyn\nac\NeuralAntiCheat.class
 dev\mrflyn\nac\commands\CraftDataSetCommand.class
@@ -10,6 +12,7 @@ dev\mrflyn\nac\utils\Crafty.class
 dev\mrflyn\nac\utils\ExtraUtils.class
 dev\mrflyn\nac\clickprocessing\CpsCounter.class
 dev\mrflyn\nac\clickprocessing\training\DataCollector.class
+dev\mrflyn\nac\checks\AutoClickerChecker.class
 dev\mrflyn\nac\Listeners.class
 dev\mrflyn\nac\clickprocessing\training\DataCollector$1.class
 dev\mrflyn\nac\utils\SpigotReflection.class

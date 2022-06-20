@@ -41,13 +41,13 @@ public class DataCollector {
                     stop(false);
                     return;
                 }
-                if (i>5){
+                if (i>10){
                     stop(true);
                     return;
                 }
                 ClickData clickData = new ClickData(cpsCounter.getCachedCPS(), player);
                 data.add(clickData);
-                player.sendMessage("["+i+"] CPS: "+clickData.getClicks()+" TPS: "+clickData.getTps()+" PING: "+clickData.getPing());
+                player.sendMessage("["+i+"] CP1/4S: "+clickData.getClicks()+" TPS: "+clickData.getTps()+" PING: "+clickData.getPing());
                 i++;
             }
         };
@@ -61,7 +61,7 @@ public class DataCollector {
 
     public void start(){
         if (isRunning)return;
-        timer.scheduleAtFixedRate(task, 2000L, 1000L);
+        timer.scheduleAtFixedRate(task, 2000L, 250L);
         isRunning = true;
         player.sendMessage("Training Started!");
     }

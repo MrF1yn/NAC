@@ -1,6 +1,7 @@
 H:\NAC\src\main\java\dev\mrflyn\nac\commands\handler\MainCommand.java
 H:\NAC\src\main\java\dev\mrflyn\nac\utils\ExtraUtils.java
 H:\NAC\src\main\java\dev\mrflyn\nac\commands\CollectDataCommand.java
+H:\NAC\src\main\java\dev\mrflyn\nac\checks\IChecker.java
 H:\NAC\src\main\java\dev\mrflyn\nac\Listeners.java
 H:\NAC\src\main\java\dev\mrflyn\nac\clickprocessing\CpsCounterTask.java
 H:\NAC\src\main\java\dev\mrflyn\nac\protocol\PacketListener.java
@@ -9,8 +10,10 @@ H:\NAC\src\main\java\dev\mrflyn\nac\utils\Crafty.java
 H:\NAC\src\main\java\dev\mrflyn\nac\clickprocessing\CpsCounter.java
 H:\NAC\src\main\java\dev\mrflyn\nac\clickprocessing\training\ClickData.java
 H:\NAC\src\main\java\dev\mrflyn\nac\clickprocessing\training\DataCollector.java
+H:\NAC\src\main\java\dev\mrflyn\nac\checks\KillAuraChecker.java
 H:\NAC\src\main\java\dev\mrflyn\nac\clickprocessing\training\TrainingData.java
 H:\NAC\src\main\java\dev\mrflyn\nac\clickprocessing\training\TrainingDataSet.java
 H:\NAC\src\main\java\dev\mrflyn\nac\NeuralAntiCheat.java
 H:\NAC\src\main\java\dev\mrflyn\nac\commands\handler\SubCommand.java
+H:\NAC\src\main\java\dev\mrflyn\nac\checks\AutoClickerChecker.java
 H:\NAC\src\main\java\dev\mrflyn\nac\commands\CraftDataSetCommand.java

@@ -33,7 +33,7 @@ public class CpsCounterTask {
                 }
             }
         };
-        timer.scheduleAtFixedRate(task, 0L, 1000L);
+        timer.scheduleAtFixedRate(task, 0L, 250L);
     }
 
     public void stop(){
